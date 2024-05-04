@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Assessment2</string>
+    <string name="list_kosong">Belum ada data</string>
+    <string name="x_diklik">%1$s diklik</string>
+    <string name="tambah_mahasiswa">Tambah Mahasiswa</string>
+    <string name="nilai">Nilai</string>
+    <string name="nilai_IPA">Nilai IPA</string>
+    <string name="isi_mahasiswa">Nama</string>
+    <string name="kembali">Kembali</string>
+    <string name="simpan">Simpan</string>
+    <string name="edit_mahasiswa">Ubah Mahasiswa</string>
+    <string name="invalid">Judul dan Isi Mahasiswa Tidak Boleh Kosong!</string>
+    <string name="lainnya">Opsi Lainnya</string>
+    <string name="hapus">Hapus Catatan</string>
+    <string name="list">Tampilan List</string>
+    <string name="grid">Tampilan Grid</string>
+</resources>
