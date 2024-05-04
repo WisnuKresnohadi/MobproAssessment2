@@ -165,7 +165,7 @@ fun ListItem(mahasiswa: Mahasiswa, onClick: () -> Unit){
     ){
 //        Text(text = mahasiswa.id.toString())
         Text(text = mahasiswa.nama, maxLines = 2, overflow = TextOverflow.Ellipsis, fontWeight = FontWeight.Bold)
-        Text(text = "Nilai Akhir : "+mahasiswa.nilaiAkhir.toString(), maxLines = 1, overflow = TextOverflow.Ellipsis)
+        Text(text = "Nilai Akhir : "+mahasiswa.nilai.toString(), maxLines = 1, overflow = TextOverflow.Ellipsis)
         Text(text = "Kelas : "+mahasiswa.kelas)
     }
 }
@@ -191,7 +191,7 @@ fun GridItem(mahasiswa: Mahasiswa, onClick: () -> Unit){
                 fontWeight = FontWeight.Bold
             )
             Text(
-                text = mahasiswa.nilaiAkhir.toString(),
+                text = mahasiswa.nilai.toString(),
                 maxLines = 1,
                 overflow = TextOverflow.Ellipsis,
             )
