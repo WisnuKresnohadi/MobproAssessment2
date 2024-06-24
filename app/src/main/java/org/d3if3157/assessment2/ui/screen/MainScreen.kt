@@ -121,7 +121,7 @@ fun ScreenContent(showList: Boolean, modifier : Modifier, navController: NavHost
         ){
             Icon(
                 painter = painterResource(
-                    R.drawable.baseline_do_not_disturb_24
+                    R.drawable.empty_data
                 ),
                 contentDescription = ""
             )
