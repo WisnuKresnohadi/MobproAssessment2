@@ -1,6 +1,8 @@
 package org.d3if3157.assessment2.ui.screen
 
 import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.Image
+import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -8,11 +10,13 @@ import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.staggeredgrid.LazyVerticalStaggeredGrid
 import androidx.compose.foundation.lazy.staggeredgrid.StaggeredGridCells
 import androidx.compose.foundation.lazy.staggeredgrid.items
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
 import androidx.compose.material3.Card
@@ -32,6 +36,7 @@ import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
@@ -119,11 +124,13 @@ fun ScreenContent(showList: Boolean, modifier : Modifier, navController: NavHost
             verticalArrangement = Arrangement.Center,
             horizontalAlignment = Alignment.CenterHorizontally
         ){
-            Icon(
-                painter = painterResource(
-                    R.drawable.empty_data
-                ),
-                contentDescription = ""
+            Image(
+                painter = painterResource(id = R.drawable.empty_data1_jpg),
+                contentDescription = "",
+                modifier = Modifier
+                    .size(300.dp) // Set the size to 100x100 dp
+                    .clip(RoundedCornerShape(0.dp)) // Clip to a square shape
+                    .border(2.dp, Color.Black) // Optional: Add a border to the icon
             )
             Text(text = stringResource(id = R.string.list_kosong))
         }
